@@ -1,4 +1,5 @@
 import { PageHeader } from "@/components/page-header";
+import Link from "next/link";
 
 const constats = [
   {
@@ -56,6 +57,38 @@ export const metadata = {
     "Constats, médiation, exécution et recouvrement. Interventions sur la Cour d'Appel de Rennes et constats nationaux.",
 };
 
+type ServiceCtaCardProps = {
+  badgeClassName: string;
+  badgeLabel: string;
+  cardClassName: string;
+};
+
+function ServiceCtaCard({
+  badgeClassName,
+  badgeLabel,
+  cardClassName,
+}: ServiceCtaCardProps) {
+  return (
+    <Link
+      href="/rendez-vous"
+      className={`group flex flex-col gap-3 rounded-2xl border p-5 shadow-sm transition hover:-translate-y-1 ${cardClassName}`}
+    >
+      <div className="flex items-center justify-between">
+        <h3 className="text-lg font-semibold text-slate-900">Prendre rendez-vous</h3>
+        <span className={`rounded-full px-3 py-1 text-xs font-semibold text-white ${badgeClassName}`}>
+          {badgeLabel}
+        </span>
+      </div>
+      <p className="text-sm text-slate-700">
+        Échange rapide avec l&apos;étude pour être orienté vers la bonne procédure.
+      </p>
+      <span className="mt-auto text-sm font-semibold text-primary transition group-hover:text-primary-strong">
+        Réserver en ligne →
+      </span>
+    </Link>
+  );
+}
+
 export default function ConstatsPage() {
   return (
     <div className="bg-[#f5f7fa]">
@@ -95,6 +128,11 @@ export default function ConstatsPage() {
                 <p className="text-sm text-slate-700">{item.description}</p>
               </div>
             ))}
+            <ServiceCtaCard
+              badgeClassName="bg-emerald-600"
+              badgeLabel="Constat"
+              cardClassName="border-emerald-200 bg-emerald-50 hover:border-emerald-300"
+            />
           </div>
         </div>
 
@@ -119,6 +157,11 @@ export default function ConstatsPage() {
                 <p className="text-sm text-slate-700">{item.description}</p>
               </div>
             ))}
+            <ServiceCtaCard
+              badgeClassName="bg-amber-600"
+              badgeLabel="Exécution"
+              cardClassName="border-amber-200 bg-amber-50 hover:border-amber-300"
+            />
           </div>
         </div>
 
@@ -143,6 +186,11 @@ export default function ConstatsPage() {
                 <p className="text-sm text-slate-700">{item.description}</p>
               </div>
             ))}
+            <ServiceCtaCard
+              badgeClassName="bg-primary"
+              badgeLabel="Médiation"
+              cardClassName="border-teal-200 bg-teal-50 hover:border-teal-300"
+            />
           </div>
         </div>
 
@@ -155,14 +203,6 @@ export default function ConstatsPage() {
           </div>
         </div>
 
-        <div className="flex justify-center pb-6">
-          <a
-            href="/contact"
-            className="inline-flex items-center gap-2 rounded-full bg-primary px-6 py-3 text-sm font-semibold text-white shadow-sm transition hover:bg-primary-strong"
-          >
-            Prendre rendez-vous en ligne
-          </a>
-        </div>
       </section>
     </div>
   );

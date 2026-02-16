@@ -1,5 +1,6 @@
 import { ContactForm } from "@/components/contact-form";
 import { PageHeader } from "@/components/page-header";
+import Link from "next/link";
 
 export const metadata = {
   title: "Contact | SELARL Eric Le Marec",
@@ -15,6 +16,14 @@ export default function ContactPage() {
           title="Nous Contacter"
           subtitle="Un interlocuteur unique pour vous orienter rapidement."
         />
+        <div className="mt-2">
+          <Link
+            href="/rendez-vous"
+            className="inline-flex items-center gap-2 rounded-full border border-primary/20 bg-primary/10 px-4 py-2 text-sm font-semibold text-primary transition hover:bg-primary/15"
+          >
+            Prendre directement rendez-vous
+          </Link>
+        </div>
 
         <div className="grid gap-8 lg:grid-cols-[1.1fr_0.9fr]">
           <ContactForm />
