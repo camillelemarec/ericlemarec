@@ -4,7 +4,7 @@ export const metadata = {
 
 export default function MentionsLegalesPage() {
   return (
-    <div className="bg-[var(--color-sand)]">
+    <div className="bg-[#f5f7fa]">
       <section className="mx-auto max-w-4xl px-6 py-12 space-y-4">
         <h1 className="text-3xl font-semibold text-slate-900">
           Mentions légales

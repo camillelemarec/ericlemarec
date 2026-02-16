@@ -1,22 +1,21 @@
 @import "tailwindcss";
 
-:root {
-  --color-primary: #0b3b7a;
-  --color-primary-strong: #082d5c;
-  --color-sand: #f5f7fa;
+@theme {
+  --color-primary: #1c6868;
+  --color-primary-strong: #155252;
   --color-surface: #ffffff;
   --color-text: #1f2937;
   --color-muted: #4b5563;
   --color-border: #e5e7eb;
-  --shadow-card: 0 20px 45px rgba(11, 59, 122, 0.06);
+  --shadow-card: 0 20px 45px rgba(28, 104, 104, 0.06);
 }
 
 ::selection {
-  background: rgba(11, 59, 122, 0.14);
+  background: rgba(28, 104, 104, 0.14);
 }
 
 body {
-  background: var(--color-sand);
+  background: #f5f7fa;
   color: var(--color-text);
   font-family: var(--font-body), "Open Sans", system-ui, -apple-system,
     sans-serif;
@@ -39,4 +38,16 @@ p {
 
 a {
   text-decoration: none;
+}
+
+.shadow-card {
+  box-shadow: var(--shadow-card);
+}
+
+.hover-shadow-card {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.hover-shadow-card:hover {
+  box-shadow: var(--shadow-card);
 }

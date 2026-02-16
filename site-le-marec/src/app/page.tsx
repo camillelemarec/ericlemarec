@@ -11,7 +11,7 @@ const cards = [
   },
   {
     title: "Les Services",
-    description: "Constats, médiation, recouvrement, contentieux locatif.",
+    description: "Commissaire de Justice, constats, médiation, recouvrement.",
     href: "/constats",
     icon: "📷",
   },
@@ -31,7 +31,7 @@ const cards = [
 
 export default function Home() {
   return (
-    <div className="bg-[var(--color-sand)]">
+    <div className="bg-[#f5f7fa]">
       <Hero
         eyebrow="Commissaire de Justice"
         title="Réactivité et Qualité d'intervention"
@@ -56,7 +56,7 @@ export default function Home() {
           </div>
           <Link
             href="/paiement"
-            className="inline-flex items-center justify-center rounded-full bg-[var(--color-primary)] px-4 py-2 text-sm font-semibold text-white shadow-sm transition hover:bg-[var(--color-primary-strong)]"
+            className="inline-flex items-center justify-center rounded-full bg-primary px-4 py-2 text-sm font-semibold text-white shadow-sm transition hover:bg-primary-strong"
           >
             Payer en ligne
           </Link>
@@ -81,7 +81,7 @@ export default function Home() {
           </div>
           <Link
             href="/etude"
-            className="inline-flex items-center gap-2 self-start rounded-full bg-[var(--color-primary)] px-4 py-2 text-sm font-semibold text-white shadow-sm transition hover:bg-[var(--color-primary-strong)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+            className="inline-flex items-center gap-2 self-start rounded-full bg-primary px-4 py-2 text-sm font-semibold text-white shadow-sm transition hover:bg-primary-strong focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
             style={{ color: "#ffffff" }}
           >
             Découvrir notre histoire

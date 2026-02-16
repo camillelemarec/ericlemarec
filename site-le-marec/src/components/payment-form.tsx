@@ -21,7 +21,7 @@ export function PaymentForm() {
           type="text"
           required
           placeholder="Ex : D2025-00123"
-          className="w-full rounded-xl border border-slate-200 px-3 py-2 text-sm outline-none transition focus:border-[var(--color-primary)] focus:ring-2 focus:ring-[var(--color-primary)]/15"
+          className="w-full rounded-xl border border-slate-200 px-3 py-2 text-sm outline-none transition focus:border-primary focus:ring-2 focus:ring-primary/15"
         />
       </div>
       <div className="space-y-1.5">
@@ -32,7 +32,7 @@ export function PaymentForm() {
           type="text"
           required
           placeholder="Votre nom"
-          className="w-full rounded-xl border border-slate-200 px-3 py-2 text-sm outline-none transition focus:border-[var(--color-primary)] focus:ring-2 focus:ring-[var(--color-primary)]/15"
+          className="w-full rounded-xl border border-slate-200 px-3 py-2 text-sm outline-none transition focus:border-primary focus:ring-2 focus:ring-primary/15"
         />
       </div>
       <div className="space-y-1.5">
@@ -45,7 +45,7 @@ export function PaymentForm() {
           step="0.01"
           required
           placeholder="Ex : 250,00"
-          className="w-full rounded-xl border border-slate-200 px-3 py-2 text-sm outline-none transition focus:border-[var(--color-primary)] focus:ring-2 focus:ring-[var(--color-primary)]/15"
+          className="w-full rounded-xl border border-slate-200 px-3 py-2 text-sm outline-none transition focus:border-primary focus:ring-2 focus:ring-primary/15"
         />
       </div>
       <p className="text-sm text-slate-500">
@@ -54,7 +54,7 @@ export function PaymentForm() {
       </p>
       <button
         type="submit"
-        className="inline-flex w-full items-center justify-center rounded-full bg-[var(--color-primary)] px-4 py-3 text-sm font-semibold text-white shadow-sm transition hover:bg-[var(--color-primary-strong)]"
+        className="inline-flex w-full items-center justify-center rounded-full bg-primary px-4 py-3 text-sm font-semibold text-white shadow-sm transition hover:bg-primary-strong"
       >
         Procéder au paiement
       </button>

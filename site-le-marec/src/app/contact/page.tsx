@@ -9,7 +9,7 @@ export const metadata = {
 
 export default function ContactPage() {
   return (
-    <div className="bg-[var(--color-sand)]">
+    <div className="bg-[#f5f7fa]">
       <section className="mx-auto max-w-6xl px-6 py-12 space-y-10">
         <PageHeader
           title="Nous Contacter"
@@ -26,8 +26,8 @@ export default function ContactPage() {
               </div>
               <div className="mt-3 space-y-2 text-sm text-slate-700">
                 <div>Adresse : 10, rue de Verdun – 44410 Herbignac</div>
-                <div>Téléphone : 06 85 11 21 13</div>
-                <div>Email : lemareceric@gmail.com</div>
+                <div>Téléphone : 02 40 88 95 57</div>
+                <div>Email : elm@etudelemarec.com</div>
               </div>
             </div>
 
@@ -59,7 +59,7 @@ export default function ContactPage() {
                 loading="lazy"
                 allowFullScreen
                 referrerPolicy="no-referrer-when-downgrade"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2702.911577950044!2d-2.316!3d47.468!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4805ac2bb5b49ba3%3A0x9a9e2b4a6e1a096d!2sHerbignac!5e0!3m2!1sfr!2sfr!4v0000000000000"
+                src="https://www.google.com/maps?q=10+rue+de+Verdun+44410+Herbignac&output=embed"
               />
             </div>
           </div>

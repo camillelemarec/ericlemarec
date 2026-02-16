@@ -34,7 +34,7 @@ export function Hero({
           <div className="absolute inset-0 bg-gradient-to-br from-black/65 via-black/48 to-black/30" />
         </div>
       ) : (
-        <div className="absolute inset-0 bg-gradient-to-br from-[var(--color-sand)] via-white to-white" />
+        <div className="absolute inset-0 bg-gradient-to-br from-[#f5f7fa] via-white to-white" />
       )}
 
       <div className="relative mx-auto flex max-w-6xl flex-col gap-12 px-6 py-20 md:flex-row md:items-center">

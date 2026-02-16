@@ -1,29 +1,41 @@
 import { PageHeader } from "@/components/page-header";
+import { TeamProfile } from "@/components/team-profile";
 
 const milestones = [
   {
     year: "2001",
-    title: "Huissier en région parisienne",
+    title: "Prestation de serment",
     detail:
-      "Spécialisation dans le tirage au sort des jeux de hasard et contrôle des opérations.",
+      "Installation à Paris 9e en tant qu’associé de la SCP Simonin-Le Marec.",
   },
   {
-    year: "2010",
-    title: "Expertises constats et recouvrement",
+    year: "2001-2025",
+    title: "Constats, recouvrement, exécution",
     detail:
-      "Développement des constats (locatif, voisinage, numérique) et du recouvrement amiable/judiciaire.",
+      "Expérience approfondie en constats (locatif, voisinage, numérique), recouvrement amiable/judiciaire et procédures d’exécution.",
   },
   {
     year: "2022",
-    title: "Formation médiation – Sorbonne",
+    title: "Qualification Commissaire de Justice",
     detail:
-      "Certification complémentaire permettant d'intervenir en qualité de médiateur.",
+      "Membre de la Chambre Régionale de Paris : réclamations, chantier du siège, création du centre de médiation CJMED.",
+  },
+  {
+    year: "2024",
+    title: "Médiation – MARD (Science Po)",
+    detail: "Formation médiation et vérification des comptes de tutelle.",
+  },
+  {
+    year: "2025",
+    title: "CJMED Paris & saisie des rémunérations",
+    detail:
+      "Qualification en tant que répartiteur et membre fondateur du CJMED Paris.",
   },
   {
     year: "2026",
     title: "Installation à Herbignac",
     detail:
-      "Arrivée sur la côte Atlantique et formation drone pour les constats en hauteur ou zones difficiles d'accès.",
+      "Reprise de l’office de Me Jean-Philippe Marchand et certification télépilote de drone (constats en hauteur ou zones difficiles d’accès).",
   },
 ];
 
@@ -35,31 +47,31 @@ export const metadata = {
 
 export default function EtudePage() {
   return (
-    <div className="bg-[var(--color-sand)]">
+    <div className="bg-[#f5f7fa]">
       <section className="mx-auto grid max-w-6xl grid-cols-1 gap-10 px-6 py-12 lg:grid-cols-[1.1fr_0.9fr]">
         <div className="flex flex-col gap-8">
-          <PageHeader
-            title="L'Étude"
-          />
+          <PageHeader title="L'Étude" />
 
           <div className="space-y-4 text-slate-700">
             <p>
-              Eric Le Marec est huissier depuis 2001. Il a commencé en région
-              parisienne, spécialisé dans le tirage au sort des jeux de hasard
-              et le contrôle des opérations.
+              Eric Le Marec exerce en qualité d’Huissier de Justice depuis 2001
+              (devenu Commissaire de Justice en 2022). Il a été associé dans une
+              importante étude parisienne, pratiquant toutes les facettes du
+              métier, et particulièrement actif en constats, constats internet,
+              contrôle des opérations de jeux et tirages au sort.
             </p>
             <p>
-              En parallèle, il a développé une expertise solide en constats
-              (locatif, voisinage, numérique), en recouvrement amiable et
-              judiciaire, ainsi qu&apos;en signification et exécution des
-              décisions.
+              En parallèle, il a développé une expertise solide en recouvrement
+              amiable et judiciaire, ainsi qu&apos;en signification et exécution
+              des décisions.
             </p>
             <p>
-              Depuis 2022, grâce à une formation complémentaire à la Sorbonne,
-              il peut intervenir en qualité de médiateur. En 2026, il s&apos;installe
-              à Herbignac et complète sa pratique par l&apos;usage du drone pour
-              réaliser des constats en hauteur ou dans des zones difficiles
-              d&apos;accès.
+              Depuis 2024, grâce à une formation complémentaire à Science Po, il
+              propose d’intervenir en qualité de médiateur. Depuis février 2026,
+              succédant à Me Jean-Philippe Marchand, il s&apos;installe à Herbignac
+              et complète sa pratique par une qualification de télépilote de
+              drone pour réaliser des constats en hauteur ou dans des zones
+              difficiles d&apos;accès.
             </p>
           </div>
 
@@ -67,7 +79,7 @@ export default function EtudePage() {
             <div className="absolute left-3 top-1 bottom-1 w-px bg-slate-200" />
             {milestones.map((item) => (
               <div key={item.year} className="relative pl-10">
-                <div className="absolute left-0 top-2 h-3 w-3 -translate-x-1.5 rounded-full border-2 border-white bg-[var(--color-primary)] shadow-sm" />
+                <div className="absolute left-0 top-2 h-3 w-3 -translate-x-1.5 rounded-full border-2 border-white bg-primary shadow-sm" />
                 <div className="flex items-center gap-3 text-xs font-semibold uppercase tracking-[0.14em] text-slate-500">
                   <span>{item.year}</span>
                   <span className="h-px flex-1 bg-slate-200" />
@@ -81,33 +93,7 @@ export default function EtudePage() {
           </div>
         </div>
 
-        <div className="lg:sticky lg:top-24">
-          <div className="relative overflow-hidden rounded-3xl border border-slate-200 shadow-[var(--shadow-card)]">
-            <div
-              className="absolute inset-0 bg-cover bg-center"
-              style={{ backgroundImage: "url('/images/image%20tf1.jpeg')" }}
-            />
-            <div className="absolute inset-0 bg-gradient-to-b from-black/45 via-black/25 to-black/55" />
-            <div className="relative flex flex-col gap-4 p-8 text-white">
-              <div className="text-xs font-semibold uppercase tracking-[0.14em] text-white/85">
-                Portrait
-              </div>
-              <div className="text-3xl font-semibold leading-tight">
-                Maître Eric Le Marec
-              </div>
-              <p
-                className="text-white/90"
-                style={{ color: "#ffffff" }}
-              >
-                Commissaire de Justice, compétent sur la Cour d&apos;Appel de
-                Rennes et pour des constats sur tout le territoire national.
-              </p>
-              <div className="rounded-2xl bg-white/12 px-4 py-3 text-sm font-medium text-white backdrop-blur">
-                Dirigeant de la SELARL Eric Le Marec
-              </div>
-            </div>
-          </div>
-        </div>
+        <TeamProfile />
       </section>
     </div>
   );

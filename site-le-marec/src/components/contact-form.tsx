@@ -20,7 +20,7 @@ export function ContactForm() {
             type="text"
             required
             placeholder="Nom et prénom"
-            className="w-full rounded-xl border border-slate-200 px-3 py-2 text-sm outline-none transition focus:border-[var(--color-primary)] focus:ring-2 focus:ring-[var(--color-primary)]/15"
+            className="w-full rounded-xl border border-slate-200 px-3 py-2 text-sm outline-none transition focus:border-primary focus:ring-2 focus:ring-primary/15"
           />
         </div>
         <div className="space-y-1.5">
@@ -29,7 +29,7 @@ export function ContactForm() {
             type="email"
             required
             placeholder="email@domaine.com"
-            className="w-full rounded-xl border border-slate-200 px-3 py-2 text-sm outline-none transition focus:border-[var(--color-primary)] focus:ring-2 focus:ring-[var(--color-primary)]/15"
+            className="w-full rounded-xl border border-slate-200 px-3 py-2 text-sm outline-none transition focus:border-primary focus:ring-2 focus:ring-primary/15"
           />
         </div>
       </div>
@@ -39,7 +39,7 @@ export function ContactForm() {
           type="text"
           required
           placeholder="Sujet de votre demande"
-          className="w-full rounded-xl border border-slate-200 px-3 py-2 text-sm outline-none transition focus:border-[var(--color-primary)] focus:ring-2 focus:ring-[var(--color-primary)]/15"
+          className="w-full rounded-xl border border-slate-200 px-3 py-2 text-sm outline-none transition focus:border-primary focus:ring-2 focus:ring-primary/15"
         />
       </div>
       <div className="space-y-1.5">
@@ -48,12 +48,12 @@ export function ContactForm() {
           rows={4}
           required
           placeholder="Votre message"
-          className="w-full rounded-xl border border-slate-200 px-3 py-2 text-sm outline-none transition focus:border-[var(--color-primary)] focus:ring-2 focus:ring-[var(--color-primary)]/15"
+          className="w-full rounded-xl border border-slate-200 px-3 py-2 text-sm outline-none transition focus:border-primary focus:ring-2 focus:ring-primary/15"
         />
       </div>
       <button
         type="submit"
-        className="inline-flex w-full items-center justify-center rounded-full bg-[var(--color-primary)] px-4 py-3 text-sm font-semibold text-white shadow-sm transition hover:bg-[var(--color-primary-strong)] sm:w-auto"
+        className="inline-flex w-full items-center justify-center rounded-full bg-primary px-4 py-3 text-sm font-semibold text-white shadow-sm transition hover:bg-primary-strong sm:w-auto"
       >
         Envoyer le message
       </button>

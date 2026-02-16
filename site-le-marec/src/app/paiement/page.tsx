@@ -9,7 +9,7 @@ export const metadata = {
 
 export default function PaiementPage() {
   return (
-    <div className="bg-[var(--color-sand)]">
+    <div className="bg-[#f5f7fa]">
       <section className="mx-auto max-w-6xl px-6 py-12 space-y-8">
         <PageHeader
           title="Paiement en ligne"
@@ -23,6 +23,9 @@ export default function PaiementPage() {
             Le formulaire ci-dessous est prêt pour connecter Stripe (PaymentIntent
             ou Checkout). Les champs requis : Référence dossier, Nom du client,
             Montant (€). Possibilité d&apos;ajouter l&apos;email pour le reçu.
+          </p>
+          <p className="mt-2 text-slate-600">
+            Le Cabinet ABGI pourra également proposer ses règlements en ligne ici.
           </p>
         </div>
         <PaymentForm />
