@@ -26,8 +26,8 @@ export default function ContactPage() {
               </div>
               <div className="mt-3 space-y-2 text-sm text-slate-700">
                 <div>Adresse : 10, rue de Verdun – 44410 Herbignac</div>
-                <div>Téléphone : 02 40 88 95 57</div>
-                <div>Email : elm@etudelemarec.com</div>
+                <div>Téléphone : 06 85 11 21 13</div>
+                <div>Email : lemareceric@gmail.com</div>
               </div>
             </div>
 

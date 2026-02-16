@@ -24,8 +24,8 @@ export function Footer() {
             <ul className="mt-3 space-y-2">
               <li>10, rue de Verdun</li>
               <li>44410 Herbignac</li>
-              <li>Tél : 02 40 88 95 57</li>
-              <li>Email : elm@etudelemarec.com</li>
+              <li>Tél : 06 85 11 21 13</li>
+              <li>Email : lemareceric@gmail.com</li>
             </ul>
           </div>
           <div>
