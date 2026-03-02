@@ -23,7 +23,9 @@ export const metadata: Metadata = {
   description:
     "Étude de Commissaire de Justice à Herbignac, compétente sur la Cour d'Appel de Rennes et nationale pour les constats.",
   icons: {
-    icon: "/images/background-logo.png",
+    icon: [{ url: "/favicon.png", type: "image/png" }],
+    shortcut: [{ url: "/favicon.png", type: "image/png" }],
+    apple: [{ url: "/favicon.png", type: "image/png" }],
   },
 };
 
