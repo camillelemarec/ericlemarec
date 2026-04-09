@@ -42,7 +42,7 @@ export default function RendezVousPage() {
                 </p>
                 <p>
                   En cas d&apos;urgence, vous pouvez aussi nous joindre au{" "}
-                  <strong>06 85 11 21 13</strong>.
+                  <strong>02 40 88 95 57</strong>.
                 </p>
               </div>
             </div>
