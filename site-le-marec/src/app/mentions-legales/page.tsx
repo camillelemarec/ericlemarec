@@ -22,7 +22,6 @@ export default function MentionsLegalesPage() {
             <p className="text-sm text-slate-700">
               Adresse : 10, rue de Verdun – 44410 Herbignac
             </p>
-            <p className="text-sm text-slate-700">Téléphone : 02 40 88 95 57</p>
             <p className="text-sm text-slate-700">Email : elm@etudelemarec.com</p>
             <p className="text-sm text-slate-700">
               Directeur de la publication : Maître Eric Le Marec
