@@ -41,8 +41,7 @@ export default function RendezVousPage() {
                   l&apos;API est configurée.
                 </p>
                 <p>
-                  En cas d&apos;urgence, vous pouvez aussi nous joindre au{" "}
-                  <strong>02 40 88 95 57</strong>.
+                  En cas d&apos;urgence, vous pouvez aussi nous joindre par email.
                 </p>
               </div>
             </div>
