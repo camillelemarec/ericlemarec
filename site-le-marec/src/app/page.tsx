@@ -51,15 +51,14 @@ export default function Home() {
         title="Réactivité et Qualité d'intervention"
         subtitle="SELARL Eric Le Marec, Herbignac. Compétence sur la Cour d'Appel de Rennes (44, 56, 35) et nationale pour les constats."
         note="Commissaire de Justice à votre écoute, que vous soyez particulier, entreprise ou institution."
-        backgroundImage="/images/page_accueil.jpg"
         backgroundVideo="/images/0708.mov"
       />
 
-      <section className="mx-auto mt-14 flex max-w-6xl flex-col gap-10 px-6 pb-28">
+      <section className="mx-auto mt-10 flex max-w-6xl flex-col gap-10 px-4 pb-20 md:mt-14 md:px-6 md:pb-28">
         <CardGrid cards={cards} />
       </section>
 
-      <section className="mx-auto max-w-6xl px-6 pb-16">
+      <section className="mx-auto max-w-6xl px-4 pb-12 md:px-6 md:pb-16">
         <div className="flex flex-col gap-4 rounded-2xl border border-slate-200 bg-white p-6 shadow-sm lg:flex-row lg:items-center lg:justify-between">
           <div className="space-y-2">
             <p className="text-xs font-semibold uppercase tracking-[0.14em] text-slate-500">
@@ -85,7 +84,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="mx-auto max-w-6xl px-6 pb-20">
+      <section className="mx-auto max-w-6xl px-4 pb-16 md:px-6 md:pb-20">
         <div className="flex flex-col gap-4 rounded-2xl border border-slate-200 bg-gradient-to-br from-slate-900 to-slate-800 p-6 text-white shadow-sm lg:flex-row lg:items-start lg:justify-between lg:gap-8">
           <div className="max-w-3xl space-y-3">
             <p className="text-xs font-semibold uppercase tracking-[0.18em] text-white/70">

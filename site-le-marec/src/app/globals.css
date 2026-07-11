@@ -53,3 +53,28 @@ a {
 .hover-shadow-card:hover {
   box-shadow: var(--shadow-card);
 }
+
+@media (max-width: 767px) {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    overflow-x: hidden;
+  }
+
+  @keyframes page-enter-mobile {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .page-enter-mobile {
+    animation: page-enter-mobile 0.32s ease-out;
+  }
+}

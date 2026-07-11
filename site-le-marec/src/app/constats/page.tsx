@@ -90,7 +90,7 @@ function ServiceCategory({
             key={item.title}
             className="flex flex-col gap-3 rounded-2xl border border-slate-200 bg-white p-5 shadow-sm"
           >
-            <div className="flex items-center justify-between">
+            <div className="flex flex-col items-start gap-2 sm:flex-row sm:items-center sm:justify-between">
               <h3 className="text-lg font-semibold text-slate-900">
                 {item.title}
               </h3>
@@ -111,7 +111,7 @@ function ServiceCategory({
 export default function ConstatsPage() {
   return (
     <div className="bg-[#f5f7fa]">
-      <section className="mx-auto max-w-6xl space-y-12 px-6 py-12">
+      <section className="mx-auto max-w-6xl space-y-12 px-4 py-10 md:px-6 md:py-12">
         <PageHeader
           title="Les Services"
           subtitle="Deux pôles d'activité : Commissaire de Justice et Gérance immobilière (Cabinet ABGI)."
@@ -151,7 +151,7 @@ export default function ConstatsPage() {
           />
         </div>
 
-        <div id="cabinet-abgi" className="space-y-4 scroll-mt-28">
+        <div id="cabinet-abgi" className="space-y-4 scroll-mt-20 md:scroll-mt-28">
           <div className="space-y-2">
             <div className="flex flex-wrap items-center gap-3 sm:gap-4">
               <Image

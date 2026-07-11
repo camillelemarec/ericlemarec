@@ -78,7 +78,7 @@ export function Footer() {
         </div>
       </div>
       <div className="border-t border-slate-200 bg-slate-50/70">
-        <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4 text-xs text-slate-500">
+        <div className="mx-auto flex max-w-6xl flex-col gap-2 px-4 py-4 text-xs text-slate-500 sm:flex-row sm:items-center sm:justify-between md:px-6">
           <span>© {new Date().getFullYear()} SELARL Eric Le Marec</span>
           <Link href="/mentions-legales" className="hover:text-slate-700">
             Mentions légales

@@ -24,11 +24,11 @@ export function Accordion({ items }: AccordionProps) {
             <button
               type="button"
               onClick={() => setOpenIndex(isOpen ? null : index)}
-              className="flex w-full items-center justify-between px-5 py-4 text-left transition hover:bg-slate-50"
+              className="flex w-full items-center justify-between gap-3 px-4 py-4 text-left transition hover:bg-slate-50 md:px-5"
               aria-expanded={isOpen}
             >
-              <span className="font-semibold text-slate-900">{item.title}</span>
-              <span className="flex h-8 w-8 items-center justify-center rounded-full border border-slate-200 text-xs font-semibold text-slate-600">
+              <span className="min-w-0 flex-1 font-semibold text-slate-900">{item.title}</span>
+              <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full border border-slate-200 text-xs font-semibold text-slate-600">
                 {isOpen ? "–" : "+"}
               </span>
             </button>
