@@ -33,8 +33,10 @@ yarn-error.log*
 # env files (can opt-in for committing if needed)
 .env*
 
-# vercel
-.vercel
+# Fichiers médias trop volumineux pour GitHub (>100 Mo)
+public/images/La Baule*.mp4
+public/images/photo portrait BONNET magali INCJ.pdf
+
 
 # typescript
 *.tsbuildinfo

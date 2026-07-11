@@ -12,7 +12,8 @@ export function Footer() {
             Eric Le Marec
           </div>
           <p className="mt-2 text-sm text-slate-600">
-            Commissaire de Justice à Herbignac – Cour d&apos;Appel de Rennes.
+            Commissaire de Justice à Herbignac (44410), compétent sur La Baule,
+            Guérande, Saint-Nazaire et la Cour d&apos;Appel de Rennes.
           </p>
         </div>
 
@@ -24,7 +25,16 @@ export function Footer() {
             <ul className="mt-3 space-y-2">
               <li>10, rue de Verdun</li>
               <li>44410 Herbignac</li>
-              <li>Email : lemareceric@gmail.com</li>
+              <li>Tél. : 02 40 88 95 57</li>
+              <li>
+                Email :{" "}
+                <a
+                  className="hover:text-slate-900"
+                  href="mailto:elm@etudelemarec.com"
+                >
+                  elm@etudelemarec.com
+                </a>
+              </li>
             </ul>
           </div>
           <div>
@@ -60,7 +70,7 @@ export function Footer() {
             </div>
             <ul className="mt-3 space-y-2">
               <li>Constat par Drone</li>
-              <li>Exécution & Signification</li>
+              <li>Exécution et Signification</li>
               <li>Recouvrement</li>
               <li>Médiation</li>
             </ul>
@@ -78,4 +88,3 @@ export function Footer() {
     </footer>
   );
 }
-

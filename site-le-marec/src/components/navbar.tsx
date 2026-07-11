@@ -70,14 +70,14 @@ export function Navbar() {
             Contact
           </Link>
           <Link
-            href="/paiement"
+            href="/constats#cabinet-abgi"
             className={`inline-flex items-center gap-2 rounded-full px-4 py-2 text-sm font-semibold shadow-sm transition focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white ${
               scrolled
                 ? "bg-primary text-white hover:bg-primary-strong"
                 : "bg-white text-[#1c6868] hover:bg-white/90"
             }`}
           >
-            Payer en ligne
+            Cabinet ABGI
           </Link>
         </div>
       </div>

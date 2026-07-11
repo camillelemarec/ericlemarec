@@ -1,8 +1,11 @@
-export const metadata = {
-  title: "Mentions légales | SELARL Eric Le Marec",
+import { buildPageMetadata } from "@/lib/seo";
+
+export const metadata = buildPageMetadata({
+  title: "Mentions légales",
   description:
-    "Mentions légales du site SELARL Eric Le Marec : éditeur, hébergement, paiement en ligne et protection des données.",
-};
+    "Mentions légales du site etudelemarec.com — SELARL Eric Le Marec, Commissaire de Justice à Herbignac : éditeur, hébergement, paiement et données personnelles.",
+  path: "/mentions-legales",
+});
 
 export default function MentionsLegalesPage() {
   return (
@@ -20,7 +23,7 @@ export default function MentionsLegalesPage() {
               Le présent site est édité par la <strong>SELARL Eric Le Marec</strong>.
             </p>
             <p className="text-sm text-slate-700">
-              Adresse : 10, rue de Verdun – 44410 Herbignac
+              Adresse : 10, rue de Verdun, 44410 Herbignac
             </p>
             <p className="text-sm text-slate-700">Email : elm@etudelemarec.com</p>
             <p className="text-sm text-slate-700">
@@ -89,4 +92,3 @@ export default function MentionsLegalesPage() {
     </div>
   );
 }
-

@@ -1,29 +1,25 @@
 import { ContactForm } from "@/components/contact-form";
 import { PageHeader } from "@/components/page-header";
-import Link from "next/link";
 
-export const metadata = {
-  title: "Contact | SELARL Eric Le Marec",
+import { buildPageMetadata } from "@/lib/seo";
+
+export const metadata = buildPageMetadata({
+  title: "Contact — Commissaire de Justice Herbignac & La Baule",
   description:
-    "Coordonnées, formulaire de contact et zone d’intervention de l’étude.",
-};
+    "Contactez l'étude Le Marec, Commissaire de Justice à Herbignac (44410). Tél. 02 40 88 95 57. Zone d'intervention : La Baule, Guérande, Saint-Nazaire, Loire-Atlantique, Morbihan et Ille-et-Vilaine.",
+  path: "/contact",
+  keywords: [
+    "contact huissier herbignac",
+    "commissaire de justice la baule contact",
+    "étude le marec téléphone",
+  ],
+});
 
 export default function ContactPage() {
   return (
     <div className="bg-[#f5f7fa]">
       <section className="mx-auto max-w-6xl px-6 py-12 space-y-10">
-        <PageHeader
-          title="Nous Contacter"
-          subtitle="Un interlocuteur unique pour vous orienter rapidement."
-        />
-        <div className="mt-2">
-          <Link
-            href="/rendez-vous"
-            className="inline-flex items-center gap-2 rounded-full border border-primary/20 bg-primary/10 px-4 py-2 text-sm font-semibold text-primary transition hover:bg-primary/15"
-          >
-            Prendre directement rendez-vous
-          </Link>
-        </div>
+        <PageHeader title="Nous Contacter" />
 
         <div className="grid gap-8 lg:grid-cols-[1.1fr_0.9fr]">
           <ContactForm />
@@ -34,8 +30,17 @@ export default function ContactPage() {
                 Coordonnées
               </div>
               <div className="mt-3 space-y-2 text-sm text-slate-700">
-                <div>Adresse : 10, rue de Verdun – 44410 Herbignac</div>
-                <div>Email : lemareceric@gmail.com</div>
+                <div>Adresse : 10, rue de Verdun, 44410 Herbignac</div>
+                <div>Téléphone : 02 40 88 95 57</div>
+                <div>
+                  Email :{" "}
+                  <a
+                    className="text-primary hover:text-primary-strong"
+                    href="mailto:elm@etudelemarec.com"
+                  >
+                    elm@etudelemarec.com
+                  </a>
+                </div>
               </div>
             </div>
 
@@ -44,9 +49,12 @@ export default function ContactPage() {
                 Zone d&apos;intervention
               </div>
               <p className="mt-3 text-sm text-slate-700">
-                Cour d&apos;Appel de Rennes : Loire-Atlantique (44), Morbihan
-                (56), Ille-et-Vilaine (35). Interventions nationales pour les
-                constats.
+                En tant que Commissaire de Justice à Herbignac, j&apos;interviens
+                sur la Cour d&apos;Appel de Rennes : Loire-Atlantique (44),
+                Morbihan (56) et Ille-et-Vilaine (35), notamment à La Baule,
+                Guérande, Pornichet et Saint-Nazaire. Pour les constats, y
+                compris par drone, j&apos;interviens sur tout le territoire
+                national.
               </p>
               <div className="mt-3 grid grid-cols-3 gap-2 text-sm font-semibold text-slate-800">
                 {["44", "56", "35"].map((dept) => (
@@ -76,4 +84,3 @@ export default function ContactPage() {
     </div>
   );
 }
-

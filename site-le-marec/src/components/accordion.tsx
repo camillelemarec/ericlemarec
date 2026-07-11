@@ -4,6 +4,7 @@ import { useState } from "react";
 
 type AccordionItem = {
   title: string;
+  definition?: string;
   content: string;
 };
 
@@ -24,6 +25,7 @@ export function Accordion({ items }: AccordionProps) {
               type="button"
               onClick={() => setOpenIndex(isOpen ? null : index)}
               className="flex w-full items-center justify-between px-5 py-4 text-left transition hover:bg-slate-50"
+              aria-expanded={isOpen}
             >
               <span className="font-semibold text-slate-900">{item.title}</span>
               <span className="flex h-8 w-8 items-center justify-center rounded-full border border-slate-200 text-xs font-semibold text-slate-600">
@@ -31,8 +33,23 @@ export function Accordion({ items }: AccordionProps) {
               </span>
             </button>
             {isOpen ? (
-              <div className="px-5 pb-5 text-sm text-slate-700">
-                {item.content}
+              <div className="space-y-4 px-5 pb-5">
+                {item.definition ? (
+                  <div className="rounded-xl border border-primary/15 bg-primary/5 p-4">
+                    <div className="text-[11px] font-semibold uppercase tracking-[0.14em] text-primary">
+                      Qu&apos;est-ce que c&apos;est&nbsp;?
+                    </div>
+                    <p className="mt-1 text-sm text-slate-700">
+                      {item.definition}
+                    </p>
+                  </div>
+                ) : null}
+                <div>
+                  <div className="text-[11px] font-semibold uppercase tracking-[0.14em] text-slate-500">
+                    Notre intervention
+                  </div>
+                  <p className="mt-1 text-sm text-slate-700">{item.content}</p>
+                </div>
               </div>
             ) : null}
           </div>

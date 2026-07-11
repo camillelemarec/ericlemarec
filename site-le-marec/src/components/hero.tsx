@@ -9,6 +9,7 @@ type HeroProps = {
   ctaSecondary?: { label: string; href: string };
   note?: string;
   backgroundImage?: string;
+  backgroundVideo?: string;
   sidePanel?: ReactNode;
 };
 
@@ -17,11 +18,27 @@ export function Hero({
   subtitle,
   note,
   backgroundImage,
+  backgroundVideo,
   sidePanel,
 }: HeroProps) {
   return (
     <section className="relative flex min-h-screen items-center overflow-hidden bg-white">
-      {backgroundImage ? (
+      {backgroundVideo ? (
+        <div className="absolute inset-0">
+          <video
+            className="absolute inset-0 h-full w-full object-cover"
+            src={backgroundVideo}
+            poster={backgroundImage}
+            autoPlay
+            muted
+            loop
+            playsInline
+            preload="metadata"
+            aria-hidden="true"
+          />
+          <div className="absolute inset-0 bg-gradient-to-br from-black/65 via-black/48 to-black/30" />
+        </div>
+      ) : backgroundImage ? (
         <div className="absolute inset-0">
           <Image
             src={backgroundImage}

@@ -1,11 +1,14 @@
 import { PageHeader } from "@/components/page-header";
 import { PaymentForm } from "@/components/payment-form";
 
-export const metadata = {
-  title: "Paiement en ligne | SELARL Eric Le Marec",
+import { buildPageMetadata } from "@/lib/seo";
+
+export const metadata = buildPageMetadata({
+  title: "Paiement en ligne",
   description:
-    "Réglez votre facture en ligne : référence dossier, nom, montant libre. Stripe prêt à être intégré.",
-};
+    "Réglez votre facture en ligne auprès de l'étude Le Marec, Commissaire de Justice à Herbignac. Paiement sécurisé par référence dossier.",
+  path: "/paiement",
+});
 
 export default function PaiementPage() {
   return (
@@ -33,4 +36,3 @@ export default function PaiementPage() {
     </div>
   );
 }
-

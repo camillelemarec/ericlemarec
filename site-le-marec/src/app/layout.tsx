@@ -3,6 +3,8 @@ import { Montserrat, Open_Sans } from "next/font/google";
 import "./globals.css";
 import { Navbar } from "@/components/navbar";
 import { Footer } from "@/components/footer";
+import { StructuredData } from "@/components/structured-data";
+import { rootMetadata } from "@/lib/seo";
 
 const headingFont = Montserrat({
   variable: "--font-heading",
@@ -18,16 +20,7 @@ const bodyFont = Open_Sans({
   display: "swap",
 });
 
-export const metadata: Metadata = {
-  title: "SELARL Eric Le Marec | Commissaire de Justice",
-  description:
-    "Étude de Commissaire de Justice à Herbignac, compétente sur la Cour d'Appel de Rennes et nationale pour les constats.",
-  icons: {
-    icon: [{ url: "/favicon.png", type: "image/png" }],
-    shortcut: [{ url: "/favicon.png", type: "image/png" }],
-    apple: [{ url: "/favicon.png", type: "image/png" }],
-  },
-};
+export const metadata: Metadata = rootMetadata;
 
 export default function RootLayout({
   children,
@@ -36,6 +29,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="fr">
+      <head>
+        <StructuredData />
+      </head>
       <body
         className={`${headingFont.variable} ${bodyFont.variable} antialiased bg-[#f5f7fa] text-slate-900`}
       >
