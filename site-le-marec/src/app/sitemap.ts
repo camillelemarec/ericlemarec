@@ -14,6 +14,12 @@ const routes = [
     priority: 0.3,
     changeFrequency: "yearly" as const,
   },
+  { path: "/llms.txt", priority: 0.2, changeFrequency: "monthly" as const },
+  {
+    path: "/llms-full.txt",
+    priority: 0.2,
+    changeFrequency: "monthly" as const,
+  },
 ];
 
 export default function sitemap(): MetadataRoute.Sitemap {

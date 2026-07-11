@@ -4,7 +4,7 @@ import "./globals.css";
 import { Navbar } from "@/components/navbar";
 import { Footer } from "@/components/footer";
 import { StructuredData } from "@/components/structured-data";
-import { rootMetadata } from "@/lib/seo";
+import { rootMetadata, SITE_URL } from "@/lib/seo";
 
 const headingFont = Montserrat({
   variable: "--font-heading",
@@ -31,6 +31,12 @@ export default function RootLayout({
     <html lang="fr">
       <head>
         <StructuredData />
+        <link
+          rel="alternate"
+          type="text/markdown"
+          href={`${SITE_URL}/llms.txt`}
+          title="Résumé du site pour les modèles de langage"
+        />
       </head>
       <body
         className={`${headingFont.variable} ${bodyFont.variable} antialiased bg-[#f5f7fa] text-slate-900`}

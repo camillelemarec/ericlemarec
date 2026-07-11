@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 
+import { FAQ_ITEMS } from "@/lib/llm";
+
 export const SITE_URL = "https://www.etudelemarec.com";
 
 export const BUSINESS = {
@@ -219,6 +221,22 @@ export function getLegalServiceJsonLd() {
       jobTitle: "Commissaire de Justice",
     },
     sameAs: [],
+  };
+}
+
+export function getFaqJsonLd() {
+  return {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "@id": `${SITE_URL}/#faq`,
+    mainEntity: FAQ_ITEMS.map((item) => ({
+      "@type": "Question",
+      name: item.question,
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: item.answer,
+      },
+    })),
   };
 }
 

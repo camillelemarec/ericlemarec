@@ -1,10 +1,11 @@
 import {
+  getFaqJsonLd,
   getLegalServiceJsonLd,
   getWebSiteJsonLd,
 } from "@/lib/seo";
 
 export function StructuredData() {
-  const schemas = [getLegalServiceJsonLd(), getWebSiteJsonLd()];
+  const schemas = [getLegalServiceJsonLd(), getWebSiteJsonLd(), getFaqJsonLd()];
 
   return (
     <script
