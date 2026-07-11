@@ -36,7 +36,6 @@ export function Hero({
             preload="metadata"
             aria-hidden="true"
           />
-          <div className="absolute inset-0 bg-gradient-to-br from-black/65 via-black/48 to-black/30" />
         </div>
       ) : backgroundImage ? (
         <div className="absolute inset-0">
