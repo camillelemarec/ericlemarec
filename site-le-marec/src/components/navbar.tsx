@@ -48,15 +48,34 @@ export function Navbar() {
           : "border-transparent bg-[#1c6868]"
       }`}
     >
-      <div className="relative mx-auto flex max-w-6xl items-center justify-between gap-2 px-4 py-2 md:gap-3 md:px-6 md:py-4">
-        <Link href="/" className="flex shrink-0 items-center gap-3 md:-ml-[183px]">
-          <div className="relative h-10 w-[min(180px,calc(100vw-10rem))] md:h-[95px] md:w-[501px]">
+      <div className="relative mx-auto flex max-w-6xl items-center justify-between px-4 py-2 md:px-6 md:py-4">
+        <Link
+          href="/"
+          className="flex shrink-0 items-center gap-3 md:hidden"
+        >
+          <div className="relative h-10 w-[min(180px,calc(100vw-10rem))]">
             <Image
               src="/images/logo2selarl.png"
               alt="SELARL Eric Le Marec"
               fill
-              sizes="(max-width: 767px) 180px, 501px"
+              sizes="180px"
               className="object-contain object-left"
+              priority
+            />
+          </div>
+        </Link>
+
+        <Link
+          href="/"
+          className="hidden items-center gap-3 md:-ml-[183px] md:flex"
+        >
+          <div className="relative h-[95px] w-[501px]">
+            <Image
+              src="/images/logo2selarl.png"
+              alt="SELARL Eric Le Marec"
+              fill
+              sizes="501px"
+              className="object-contain"
               priority
             />
           </div>
@@ -74,7 +93,7 @@ export function Navbar() {
           ))}
         </nav>
 
-        <div className="flex shrink-0 items-center gap-2 md:gap-3">
+        <div className="flex shrink-0 items-center gap-2 md:items-center md:gap-3">
           <button
             type="button"
             className={`inline-flex h-10 w-10 items-center justify-center rounded-full transition md:hidden ${
@@ -134,9 +153,19 @@ export function Navbar() {
         </div>
       </div>
 
+      {menuOpen ? (
+        <div
+          className="fixed inset-0 top-14 z-20 bg-black/25 md:hidden"
+          aria-hidden
+          onClick={() => setMenuOpen(false)}
+        />
+      ) : null}
+
       <div
-        className={`overflow-hidden transition-[max-height,opacity] duration-300 ease-out md:hidden ${
-          menuOpen ? "max-h-[24rem] opacity-100" : "max-h-0 opacity-0"
+        className={`relative z-30 overflow-hidden transition-[max-height,opacity] duration-300 ease-out md:hidden ${
+          menuOpen
+            ? "max-h-[24rem] opacity-100"
+            : "pointer-events-none max-h-0 opacity-0"
         }`}
       >
         <nav
@@ -176,14 +205,6 @@ export function Navbar() {
           </ul>
         </nav>
       </div>
-
-      {menuOpen ? (
-        <div
-          className="fixed inset-0 top-14 z-20 bg-black/25 md:hidden"
-          aria-hidden
-          onClick={() => setMenuOpen(false)}
-        />
-      ) : null}
     </header>
   );
 }
