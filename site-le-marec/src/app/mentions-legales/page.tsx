@@ -87,6 +87,15 @@ export default function MentionsLegalesPage() {
               l&apos;exhaustivité en permanence.
             </p>
           </section>
+
+          <section className="space-y-2">
+            <h2 className="text-lg font-semibold text-slate-900">Réalisation du site</h2>
+            <p className="text-sm text-slate-700">
+              Site internet réalisé par <strong>Studio Prompt</strong>
+            </p>
+            <p className="text-sm text-slate-700">SIRET : 93990621000017</p>
+            <p className="text-sm text-slate-700">Email : lemareccamille@gmail.com</p>
+          </section>
         </div>
       </section>
     </div>

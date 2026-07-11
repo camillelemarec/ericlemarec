@@ -41,3 +41,4 @@ public/images/photo portrait BONNET magali INCJ.pdf
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+.vercel
