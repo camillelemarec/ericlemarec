@@ -105,6 +105,14 @@ export default function Home() {
             <p className="text-sm leading-relaxed text-white/90">
               Cabinet ABGI, 10, rue de Verdun, 44410 Herbignac. Cabinet de
               gestion immobilière — Agence Brière Gestion Immobilière.
+              Téléphone :{" "}
+              <a
+                href="tel:+33240889314"
+                className="font-semibold text-white underline decoration-white/40 underline-offset-4 hover:decoration-white"
+              >
+                02 40 88 93 14
+              </a>
+              .
             </p>
             <p className="text-sm text-white/85">
               <a

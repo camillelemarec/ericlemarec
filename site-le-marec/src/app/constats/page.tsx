@@ -192,6 +192,15 @@ export default function ConstatsPage() {
                 propriétaires.
               </p>
               <p className="text-sm text-slate-700">
+                Téléphone :{" "}
+                <a
+                  href="tel:+33240889314"
+                  className="font-semibold text-primary hover:text-primary-strong"
+                >
+                  02 40 88 93 14
+                </a>
+              </p>
+              <p className="text-sm text-slate-700">
                 <a
                   href="https://www.leboncoin.fr/"
                   target="_blank"
